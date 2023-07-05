@@ -5,64 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-
-        .container{
-            margin: 20px;
-        }
-        .inner{
-            margin:0 auto;
-            border: 1px solid #ede8e8;
-            background: #ede8e8;
-            box-shadow: 6px 4px #c9c9c9;
-            border-radius: 5px;
-            height: 230px;
-            width: 200px;
-            text-align: center;
-            padding: 20px;
-            transform: rotate(-1deg);
-            
-            transition: .2s;
-        }
-        .inner:hover{
-            margin:0 auto;
-            border: 1px solid #ede8e8;
-            background: #ede8e8;
-            box-shadow: -6px 5px 5px #c9c9c9;
-            transition: .2s;
-            transform: rotate(1deg);
-        }
-        .btn{
-            margin-top: 10px;
-        }
-        .btn button{
-            border: none;
-            padding: 8px;
-            border-radius: 10px;
-            margin: 7px;
-        }
-        .switch-on{
-            background-color: green;
-            color: aliceblue;
-        }
-        .switch-off{
-            background-color: #803a00;
-            color: aliceblue;
-        }
-        .switch-on:hover{
-            background-color: #999999;
-            color: #050505;
-            transition: .5s;
-        }
-        .switch-off:hover{
-            background-color: #999999;
-            color: #050505;
-            transition: .5s;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Light on off Project</h1>
@@ -79,24 +22,6 @@
 
 
 
-    <script>
-        var light = document.querySelector('.light-image'); 
-        var switchOn = document.querySelector('.switch-on'); 
-        var switchOff = document.querySelector('.switch-off');
-
-        switchOn.addEventListener('click', function (){
-
-            light.src = "pic_bulbon.gif";
-            console.log('pic_bulbon.gif');
-        })
-
-        switchOff.addEventListener('click', function (){ 
-
-        light.src = "pic_bulboff.gif";
-        console.log('pic_bulbon.gif');
-        })
-        
-
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>
